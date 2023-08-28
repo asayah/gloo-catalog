@@ -1,0 +1,7 @@
+apiVersion: demo.codefresh.io/v1alpha1
+kind: VirtualArgoCD
+metadata:
+  name: "bla123123231231321"
+spec:
+  argocd:
+    values: {}
