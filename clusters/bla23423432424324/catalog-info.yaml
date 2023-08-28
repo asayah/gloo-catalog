@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "bla23423432424324"
+spec:
+  type: workspace
+  system: default
+  owner: user:alex
+  lifecycle: experimental
+  region: "resource:default/us-west-1"
