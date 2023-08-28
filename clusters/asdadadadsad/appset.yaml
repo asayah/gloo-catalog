@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name:  "asdadadadsad"
+  namespace: argocd
+spec:
+  generators:
+  - list:
+      elements:
+      - cluster: cluster1
+        url: 
+  template:
+    metadata:
+      name: -httpbin
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/ably77/idp-project
+        targetRevision: HEAD
+        path: applications/
+      destination:
+        server: 
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+        syncOptions:
+          - ApplyOutOfSyncOnly=true
