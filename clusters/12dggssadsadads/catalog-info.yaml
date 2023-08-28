@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "12dggssadsadads"
+spec:
+  type: workspace
+  owner: user:alex
+  lifecycle: experimental
+
